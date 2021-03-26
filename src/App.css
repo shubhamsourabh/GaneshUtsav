@@ -1,38 +1,185 @@
-.App {
-  text-align: center;
+/* div img {
+	width: 100vw;
+	height: 100vh;
+} */
+
+.container {
+	background: lightblue url("./image/ganeshabackground.jpg") no-repeat center;
+	background-size: 100vw 100vh;
+	display: grid;
+
+	grid-template-columns: 12em 1fr 1fr 1fr;
+	height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container img {
+	width: 100%;
+	height: 100%;
+
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navcontainer p {
+	position: absolute;
+	left: auto;
+	top: 150px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navcontainer ul li {
+	font-weight: bold;
+	list-style-type: none;
+	margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.one {
+	background-color: rgb(159, 255, 95);
+	border: 1px solid rgb(152, 158, 119);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.two {
+	background-color: rgb(226, 146, 27);
+	border: 1px solid rgb(171, 31, 199);
+}
+
+.three {
+	background-color: rgb(255, 205, 247);
+	border: 1px solid rgba(51, 230, 221, 0.637);
+}
+.four {
+	background-color: rgb(245, 62, 7);
+	border: 1px solid rgba(92, 235, 9, 0.637);
+}
+.aside {
+	grid-column-start: 4;
+	grid-column-end: 5;
+
+	/* background-image: url("./image/utsav.png");
+	background-repeat: no-repeat;
+	background-position: center top; */
+}
+
+.aside p {
+}
+
+.middle {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.middle h1 {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	position: absolute;
+	top: 150px;
+}
+
+.middle p {
+	font-family: cursive;
+	position: absolute;
+	top: 200px;
+	font-weight: bold;
+}
+
+/* Style for Contact Page */
+
+.container1 {
+	background: #d6dbe2 url("./image/contact_bg.jpg") no-repeat top center;
+	background-size: cover;
+
+	display: grid;
+
+	grid-template-columns: 12em 1fr 12em;
+	height: 100vh;
+}
+
+.contactform {
+	background: url("./image/contact_form_bg.png") no-repeat top center;
+	grid-column-start: 2;
+	grid-column-end: 3;
+
+	color: #461449;
+	float: left;
+	text-align: center;
+}
+
+.contactform h3 {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 30px;
+	padding-top: 50px;
+}
+.contactform ul {
+	list-style: none;
+	/* list-style-image: url("./image/call_black_24dp.svg"); */
+	/* text-indent: 15px; */
+	display: block;
+}
+ul li::marker {
+	/* font-size: 1.5em; */
+}
+
+/* styling for About us Page */
+.container3 {
+	background: #000 url("./image/about_bgu.jpg") no-repeat top center;
+	background-size: cover;
+
+	display: grid;
+
+	grid-template-columns: 5em 1fr 5em;
+	height: 100vh;
+}
+
+.aboutform {
+	background: url("./image/location_bg.png") no-repeat top center;
+	grid-column-start: 2;
+	grid-column-end: 3;
+
+	color: #0f0f0f;
+	float: left;
+	text-align: center;
+
+	/* width: 700px;
+	height: 300px; */
+}
+
+.aboutform p {
+	margin-left: 0px;
+	font-size: small;
+}
+
+/* .paragraph {
+	width: 700px;
+	height: 320px;
+
+	overflow: hidden;
+} */
+
+.container2 {
+	background-color: burlywood;
+	background-size: cover;
+
+	display: flex;
+
+	width: 100vw;
+	height: 100vh;
+}
+
+.form {
+	margin: auto;
+	background-color: chartreuse;
+	padding: 2.5em;
+}
+
+.form div {
+	display: block;
+}
+
+input[type="submit"] {
+	margin-left: 10em;
+}
+
+input[type="text"] {
+	margin-left: 2em;
 }
