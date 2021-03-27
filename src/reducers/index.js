@@ -1,3 +1,4 @@
 import { combineReducers } from "redux";
+import submit from "./submit";
 
-export default combineReducers({});
+export default combineReducers({ submit });

@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import SideNav from "./SideNav";
 
+import { connect } from "react-redux";
+import { getUser } from "../actions/submit";
+import PropTypes from "prop-types";
+
 const Form = () => {
 	const [formData, setFormData] = useState({
 		first_name: "",
@@ -8,17 +12,26 @@ const Form = () => {
 	});
 
 	const { first_name, last_name } = formData;
-
-	const onChange = (e) =>
+	//console.log(first_name);
+	const onChange = (e) => {
+		//console.log(first_name);
 		setFormData({ ...formData, [e.target.name]: e.target.value });
+	};
+
+	const onSubmit = async (e) => {
+		e.preventDefault();
+		getUser({ first_name, last_name });
+		// console.log("Hello From Form");
+		alert("Hello" + " " + first_name);
+	};
 
 	return (
 		<div className="container2">
 			<SideNav />
 			<div className="form">
-				<form>
+				<form onSubmit={(e) => onSubmit(e)}>
 					<div id="Fname">
-						<label for="fname">First Name:</label>
+						<label htmlFor="fname">First Name:</label>
 						<input
 							type="text"
 							id="first"
@@ -28,7 +41,7 @@ const Form = () => {
 						></input>
 					</div>
 					<div id="Lname">
-						<label for="lname">Last Name:</label>
+						<label htmlFor="lname">Last Name:</label>
 						<input
 							type="text"
 							id="last"
@@ -46,4 +59,13 @@ const Form = () => {
 	);
 };
 
-export default Form;
+Form.propTypes = {
+	getUser: PropTypes.func.isRequired,
+	user: PropTypes.object.isRequired,
+};
+
+const mapStateToProps = (state) => ({
+	user: state.user,
+});
+
+export default connect(mapStateToProps, { getUser })(Form);

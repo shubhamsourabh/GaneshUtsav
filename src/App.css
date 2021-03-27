@@ -12,45 +12,54 @@
 	height: 100vh;
 }
 
-.container img {
+/* .container img {
 	width: 100%;
 	height: 100%;
 
-	/* Set up positioning */
+
 	position: fixed;
 	top: 0;
 	left: 0;
-}
+} */
 
-.navcontainer p {
+.navcontainer a {
+	margin-top: 150px;
 	position: absolute;
-	left: auto;
-	top: 150px;
+	left: -80px;
+	transition: 0.3s;
+	padding: 15px;
+	width: 100px;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	border-radius: 0 5px 5px 0;
 }
 
-.navcontainer ul li {
-	font-weight: bold;
-	list-style-type: none;
-	margin: auto;
+.navcontainer a:hover {
+	left: 0;
 }
 
 .one {
-	background-color: rgb(159, 255, 95);
+	top: 20px;
+	background-color: rgb(65, 223, 196);
 	border: 1px solid rgb(152, 158, 119);
 }
 
 .two {
-	background-color: rgb(226, 146, 27);
+	top: 80px;
+	background-color: rgb(202, 223, 18);
 	border: 1px solid rgb(171, 31, 199);
 }
 
 .three {
-	background-color: rgb(255, 205, 247);
+	top: 140px;
+	background-color: rgb(241, 34, 207);
 	border: 1px solid rgba(51, 230, 221, 0.637);
 }
 .four {
+	top: 200px;
 	background-color: rgb(245, 62, 7);
-	border: 1px solid rgba(92, 235, 9, 0.637);
+	border: 2px solid rgba(92, 235, 9, 0.637);
 }
 .aside {
 	grid-column-start: 4;
@@ -157,7 +166,7 @@ ul li::marker {
 } */
 
 .container2 {
-	background-color: burlywood;
+	background-image: url("./image/ranurte-EK6GH2efeMg-unsplash.jpg");
 	background-size: cover;
 
 	display: flex;
@@ -168,18 +177,28 @@ ul li::marker {
 
 .form {
 	margin: auto;
-	background-color: chartreuse;
+	/* background-color: rgb(189, 209, 169); */
 	padding: 2.5em;
+	width: 200px;
+	height: 200px;
+	font-weight: bold;
+	/* height: auto; */
 }
 
+/* .form div {
+	text-align: center;
+} */
 .form div {
 	display: block;
+	text-align: center;
 }
 
 input[type="submit"] {
-	margin-left: 10em;
+	margin-left: 2em;
+	background-color: rgba(231, 73, 25, 0);
 }
 
 input[type="text"] {
 	margin-left: 2em;
+	background-color: rgb(115, 129, 155);
 }

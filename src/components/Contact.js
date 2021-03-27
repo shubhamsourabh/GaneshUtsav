@@ -13,7 +13,7 @@ const Contact = () => {
 					Bangalore 560 019 INDIA
 				</address>
 				<ul>
-					<li>+91 9342022070 / 9590443016</li>
+					<li>+91 9342022070 / 9590443999</li>
 				</ul>
 			</div>
 		</div>
