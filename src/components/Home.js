@@ -4,7 +4,7 @@ const Home = () => {
 	return (
 		<div className="container">
 			<SideNav></SideNav>
-			<div className="middle">
+			<div className="middle animate__animated animate__backInUp">
 				<h1>
 					58 <sup>th</sup> Ganesha Utsav
 				</h1>

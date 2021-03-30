@@ -88,7 +88,7 @@
 .middle p {
 	font-family: cursive;
 	position: absolute;
-	top: 200px;
+	top: 250px;
 	font-weight: bold;
 }
 
@@ -148,7 +148,7 @@ ul li::marker {
 	color: #0f0f0f;
 	float: left;
 	text-align: center;
-
+	/* justify-content: center; */
 	/* width: 700px;
 	height: 300px; */
 }
@@ -166,7 +166,7 @@ ul li::marker {
 } */
 
 .container2 {
-	background-image: url("./image/ranurte-EK6GH2efeMg-unsplash.jpg");
+	background-image: url("./image/registration-form-background-images-7.jpg");
 	background-size: cover;
 
 	display: flex;
@@ -175,30 +175,51 @@ ul li::marker {
 	height: 100vh;
 }
 
-.form {
+.Form {
+	/* opacity: 0.3; */
+	/* border: 10px solid gray; */
 	margin: auto;
+	/* justify-content: center; */
 	/* background-color: rgb(189, 209, 169); */
 	padding: 2.5em;
-	width: 200px;
-	height: 200px;
+	/* color: rgba(52, 8, 247, 0.548); */
 	font-weight: bold;
-	/* height: auto; */
+	/* height: auto;
+	width: auto; */
+	font-family: "Dela Gothic One", cursive;
 }
 
-/* .form div {
+.Form h1 {
+	text-align: center;
+	color: #afb42bff;
+	/* .form div {
 	text-align: center;
 } */
-.form div {
+}
+
+.Form div {
+	width: 100%;
 	display: block;
 	text-align: center;
 }
 
+.Form div label {
+	color: #0080ff;
+	opacity: 1;
+}
 input[type="submit"] {
 	margin-left: 2em;
-	background-color: rgba(231, 73, 25, 0);
+	opacity: 0.5;
+
+	/* background-color: rgba(236, 246, 247, 0.973); */
+}
+input[type="submit"]:hover {
+	background-color: rgb(252, 151, 0);
+	/* background-color: rgba(236, 246, 247, 0.973); */
 }
 
 input[type="text"] {
 	margin-left: 2em;
-	background-color: rgb(115, 129, 155);
+	opacity: 0.3;
+	/* background-color: rgb(243, 245, 245); */
 }

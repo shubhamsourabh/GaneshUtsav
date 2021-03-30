@@ -5,9 +5,9 @@ const About = () => {
 	return (
 		<div className="container3">
 			<SideNav />
-			<div className="aboutform">
+			<div className="aboutform animate__animated animate__backInRight">
 				<h3>ABOUT BGU</h3>
-				<div className="paragraph">
+				<div className="paragraph ">
 					<p>
 						The 58th Bengaluru Ganesh Utsava upholds the rich tradition of
 						culture

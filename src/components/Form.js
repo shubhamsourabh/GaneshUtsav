@@ -28,7 +28,8 @@ const Form = () => {
 	return (
 		<div className="container2">
 			<SideNav />
-			<div className="form">
+			<div className="Form animate__animated animate__backInLeft">
+				<h1>Hello User</h1>
 				<form onSubmit={(e) => onSubmit(e)}>
 					<div id="Fname">
 						<label htmlFor="fname">First Name:</label>
@@ -36,20 +37,24 @@ const Form = () => {
 							type="text"
 							id="first"
 							name="first_name"
+							placeholder="Firstname..."
 							onChange={(e) => onChange(e)}
 							required
 						></input>
 					</div>
+					<br></br>
 					<div id="Lname">
 						<label htmlFor="lname">Last Name:</label>
 						<input
 							type="text"
 							id="last"
 							name="last_name"
+							placeholder="Lastname..."
 							onChange={(e) => onChange(e)}
 							required
 						></input>
 					</div>
+					<br></br>
 					<div id="submit">
 						<input type="submit"></input>
 					</div>
