@@ -191,7 +191,7 @@ ul li::marker {
 
 .Form h1 {
 	text-align: center;
-	color: #afb42bff;
+	color: rgb(0, 0, 0);
 	/* .form div {
 	text-align: center;
 } */
@@ -204,7 +204,7 @@ ul li::marker {
 }
 
 .Form div label {
-	color: #0080ff;
+	color: #ffffff;
 	opacity: 1;
 }
 input[type="submit"] {

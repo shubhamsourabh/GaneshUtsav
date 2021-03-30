@@ -2,12 +2,12 @@ import { SUBMIT_FORM, Error } from "./types";
 import axios from "axios";
 
 //Get User
-export const getUser = ({ f_name, l_name }) => async (dispatch) => {
+export const getUser = () => async (dispatch) => {
+	console.log("Hello From Get user");
 	try {
-		console.log("Hello From Get user");
-		const res = await axios.get("https://jsonplaceholder.typicode.com/users/1");
+		const res = await axios.get("https://api.mocki.io/v1/b043df5a");
 		//const res = "Hello Shubham";
-		console.log(res);
+		console.log(res.data);
 		dispatch({ type: SUBMIT_FORM, payload: res.data });
 	} catch (error) {
 		console.err(error);

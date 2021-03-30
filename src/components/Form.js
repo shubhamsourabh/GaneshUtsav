@@ -21,7 +21,7 @@ const Form = () => {
 	const onSubmit = async (e) => {
 		e.preventDefault();
 		getUser({ first_name, last_name });
-		// console.log("Hello From Form");
+		console.log("Hello From Form");
 		alert("Hello" + " " + first_name);
 	};
 
@@ -64,13 +64,14 @@ const Form = () => {
 	);
 };
 
-Form.propTypes = {
+Form.propType = {
 	getUser: PropTypes.func.isRequired,
 	user: PropTypes.object.isRequired,
 };
 
 const mapStateToProps = (state) => ({
-	user: state.user,
+	first_name: state.first_name,
+	last_name: state.last_name,
 });
 
 export default connect(mapStateToProps, { getUser })(Form);
